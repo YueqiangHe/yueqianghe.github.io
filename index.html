@@ -4,176 +4,206 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Yueqiang He's Personal Resume Website" />
+    <meta name="description" content="Resume of Yueqiang He" />
     <meta name="author" content="Yueqiang He" />
     <title>Yueqiang He - Resume</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="dist/assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="dist/assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
         type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="dist/css/styles.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">Yueqiang He</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#education">Education</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#interests">Interests</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Yueqiang He</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="dist/assets/img/profile.jpg" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+            </ul>
         </div>
     </nav>
-    <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-5" src="dist/assets/img/avatar.jpg" alt="Yueqiang He" />
-            <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase mb-0">Yueqiang He</h1>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Computer Science Student - HPC Enthusiast</p>
-        </div>
-    </header>
-    <!-- About Section-->
-    <section class="page-section bg-light" id="about">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">About</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <p class="lead">I am a Computer Science student at the University of Science and Technology of
-                        China, passionate about High Performance Computing and system design. I enjoy optimizing
-                        performance and exploring system scheduling and protocol design.</p>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Yueqiang
+                    <span class="text-primary">He</span>
+                </h1>
+                <div class="subheading mb-5">
+                    University of Science and Technology of China · Hefei, Anhui, China · +86 18788868380 ·
+                    <a href="mailto:yueqiang_he@mail.ustc.edu.cn">yueqiang_he@mail.ustc.edu.cn</a>
+                </div>
+                <p class="lead mb-5">I enjoy performance optimization and am amazed at the application of HPC in
+                    scientific computing. I am also very interested in system-level research, including scheduling and
+                    system protocol design.</p>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://github.com/YueqiangHe"><i class="fab fa-github"></i></a>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Education Section-->
-    <section class="page-section" id="education">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Education</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="mb-5">
-                        <h3>University of Science and Technology of China (USTC)</h3>
-                        <p class="subheading">Bachelor of Computer Science and Technology, Aug 2022 - Jun 2026</p>
-                        <ul>
-                            <li>Honors: 1st Class Prize (2024), Outstanding Performance (2024), Outstanding Freshman
-                                Scholarship (2022), Honors College Bursaries (2024)</li>
-                            <li>Language: TOEFL Score: 91 (Reading: 26, Listening: 23, Writing: 23, Speaking: 19)</li>
-                            <li>Extracurricular: Committee Member of Life of Class 23, School of Computer Sciences,
-                                Grade 22</li>
-                        </ul>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Research Experience</h2>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Distributed Deployment of Foundation Model using Ray</h3>
+                        <div class="subheading mb-3">USTC</div>
+                        <p>Achieved parallel training and inference of large models through Ray and tools such as
+                            DeepSpeed ZeRO, automatic dataset partitioning, and vLLM. Leveraged Ray's API to achieve
+                            nearly linear acceleration in large model training.</p>
+                        <p><a href="https://github.com/OSH-2024/Team_SwanGeese" target="_blank">Project Link</a></p>
                     </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Mar. 2024 - June. 2024</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Automated Reasoning Engine System</h3>
+                        <div class="subheading mb-3">Advisor: Prof. Yi Zhou</div>
+                        <p>Focused on cognitive intelligence, including developing a knowledge-based AI programming
+                            language and an IMO automatic answering system. Contributions include data annotation for
+                            IMO questions, operator modeling, and designing a problem understanding system.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Sept. 2023 - July. 2024</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Extending Basilisk to C++ Using Clang Frontend</h3>
+                        <div class="subheading mb-3">Advisors: Prof. Hong An & Prof. Junshi Chen</div>
+                        <p>Researched language extension and migration by modifying the Clang frontend to support C++
+                            syntax in Basilisk. Investigated the compilation process of Basilisk and C++, and assessed
+                            feasibility of migration.</p>
+                        <p><a href="https://github.com/YueqiangHe/basilisk_and_clang" target="_blank">Project Link</a>
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Sept. 2024 - Nov. 2024</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Dense kernel-based LU solver for Kunpeng Processor</h3>
+                        <div class="subheading mb-3">Advisors: Prof. Hong An & Prof. Junshi Chen</div>
+                        <p>Focused on sparse matrix reordering and dense block optimization. Addressed performance
+                            overhead caused by NUMA and published a paper on efficient sparse LU factorization in
+                            first-principles materials simulation.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Dec. 2024 - Present</span></div>
+                </div>
+
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">University of Science and Technology of China</h3>
+                        <div class="subheading mb-3">B.S. in Computer Science and Technology</div>
+                        <div>Hua Xia Talent Program, Minor in Finance</div>
+                        <p>GPA: 3.67/4.3, Rank: 32/171</p>
+                        <p>Core courses: Data Structures, Analog and Digital Circuits, Software Engineering Practice,
+                            Scientific Programming with Python, Computer Organization and Design (Honor), Operating
+                            System (Honor), Algebraic Structure, Equations of Mathematical Physics B.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Aug. 2022 – Jun. 2026</span></div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Interests Section-->
-    <section class="page-section bg-light" id="interests">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Research Interests</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
+        </section>
+        <hr class="m-0" />
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
+                <div class="subheading mb-3">Programming Languages & Tools</div>
+                <ul class="list-inline dev-icons">
+                    <li class="list-inline-item"><i class="fab fa-c"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-cuttlefish"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                </ul>
+                <div class="subheading mb-3">Other Skills</div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Verilog, Fortran
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        System performance optimization and HPC
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        System scheduling and protocol design
+                    </li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <p class="lead">My research interests lie in High Performance Computing (HPC) and system design. I
-                        am fascinated by performance optimization and the application of HPC in scientific computing.
-                        Additionally, I am deeply interested in system scheduling and the design of system protocols.
-                    </p>
-                </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Interests</h2>
+                <p>Outside of my academic work, I enjoy contributing to open-source projects, exploring system
+                    architecture, and following the latest advances in HPC and distributed systems.</p>
             </div>
-        </div>
-    </section>
-    <!-- Contact Section-->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
+        </section>
+        <hr class="m-0" />
+        <!-- Awards-->
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Awards & Honors</h2>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        1st prize in 2025 ASC Student Supercomputer Challenge
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Outstanding Student Scholarship (Silver, TOP 20%) in 2023 and 2024
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Provincial 2nd prize in Chinese Mathematics Competitions in 2024
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Outstanding Freshman Scholarship in 2022
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Honors College Bursaries in 2024
+                    </li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="lead mb-5">Email: yueqiang_he@mail.ustc.edu.cn</p>
-                    <p class="lead mb-5">Phone: +86 18788868380</p>
-                    <p class="lead mb-5">
-                        <a href="https://github.com/YueqiangHe" target="_blank">GitHub Profile</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer-->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p class="lead mb-0">
-                        University of Science and Technology of China<br />
-                        96 Jinzhuan Rd, Hefei, Anhui Province, P.R. China
-                    </p>
-                </div>
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/YueqiangHe"
-                        target="_blank"><i class="fab fa-fw fa-github"></i></a>
-                </div>
-                <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">About This Site</h4>
-                    <p class="lead mb-0">
-                        Built with
-                        <a href="https://startbootstrap.com/themes/resume">Start Bootstrap Resume</a>
-                        and hosted on GitHub Pages.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; Yueqiang He 2025</small></div>
+        </section>
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
