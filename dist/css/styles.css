@@ -12655,6 +12655,10 @@ p.lead {
   font-size: 1.25rem;
 }
 
+.text-red {
+  color: red;
+}
+
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
