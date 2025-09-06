@@ -76,6 +76,31 @@
             </div>
         </section>
         <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h3 class="mb-5">Education</h3>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">University of Science and Technology of China</h3>
+                        <div class="subheading mb-3">B.S. in Computer Science and Technology</div>
+                        <div>Hua Xia Talent Program, Minor in Finance</div>
+                        <p>GPA: 3.57/4.3, Average Score: 85.74/100 Rank: 43/172</p>
+                        <p>Core courses: Data Structures(4.3), Analog and Digital Circuits(4.0), Software Engineering
+                            Practice(4.3), Fundamentals
+                            of Scientific Programming with Python(4.0), Computer Organization and Design(Honor)(3.7),
+                            Operating
+                            System(Honor)(3.7), Algebraic Structure(4.0), Equations of Mathematical Physics B(4.0),
+                            Mathematical Analysis(3.7),
+                            Linear Algebra B1(3.7), Function of Complex Variable B(3.7),Graph Theory(3.7), Probability
+                            Theory and Mathematical
+                            Statistics(3.7), Stochastic Processes B(3.7).</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Aug. 2022 – Jun. 2026</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
         <!-- Experience-->
         <section class="resume-section" id="experience">
             <div class="resume-section-content">
@@ -103,9 +128,19 @@
                     <div class="flex-grow-1">
                         <h4 class="mb-0">Automated Reasoning Engine System</h4>
                         <div class="subheading mb-5">Advisor: Prof. Yi Zhou</div>
-                        <p>• Project Introduction: We aim to explore Cognitive Intelligence, including the development
-                            of a knowledge-based
-                            artificial intelligence programming language and an IMO automatic answering system.
+                        <p>• Project Introduction: Most existing large models are deployed on GPUs. We aim to deploy the
+                            Deepseek V1 model on
+                            Kunpeng processors, enabling large-scale model deployment on CPUs, particularly within the
+                            ARM architecture. This
+                            endeavor will pave the way for new explorations in the utilization of heterogeneous
+                            computing resources for future
+                            applications.
+                            <br />
+                            • Research Methods: We developed a C++ deployment implementation optimized for the Kunpeng
+                            processor based on the ARM
+                            instruction set, and integrated it with Python operators through pybind11. Finally, we
+                            applied performance analysis
+                            tools to profile and further optimize the operator.
                             <br />
                             • My Main Contribution: Data Annotation for IMO Questions, Operator Modeling in Modern
                             Algebra, Designing a
@@ -138,19 +173,34 @@
                     <div class="flex-grow-1">
                         <h4 class="mb-0">Dense kernel-based LU solver for Kunpeng Processor</h4>
                         <div class="subheading mb-5">Advisors: Prof. Hong An & Prof. Junshi Chen</div>
-                        <p>• Project Introduction: We are committed to researching LU solvers. Our initial focus is on
-                            optimizing sparse matrix
-                            reordering and designing a storage format for dense block optimization.
+                        <p>• Project Introduction: We are committed to researching LU solvers. Traditional solvers
+                            struggle with memory limits and
+                            inefficient handling of locally dense regions. We propose BTLU, a new LU factorization
+                            method that directly splits
+                            matrices into uniform dense blocks, turning memory-bound tasks into compute-intensive ones.
+                            This approach better matches
+                            modern CPU architectures and achieves significant speedups on Intel, AMD, and ARM platforms.
                             <br />
-                            • My Contribution: I
-                            participated in
-                            optimization tests on various platforms, and tried to solve the NUMA effect of
-                            existing parallel algorithms. I also completed the comparison and reflection of the existing
-                            work with previous work.
+                            • Research Methods: Our method combines RCM reordering to cluster nonzeros near the diagonal
+                            with a block-tile structure
+                            that organizes data into cache-friendly dense tiles and parallelizable blocks. Factorization
+                            is performed using
+                            efficient level-3 BLAS kernels, while OpenMP ensures balanced multithreading. Unlike
+                            traditional approaches requiring
+                            symbolic analysis, BTLU dynamically allocates tiles, reducing memory use and improving NUMA
+                            locality. This design
+                            maximizes cache efficiency and scalability.
+                            <br />
+                            • My Contribution:
+                            • Optimization tests on various platforms
+                            • Try to solve the NUMA effect of existing parallel algorithms
+                            • Comparison and reflection of the existing work with previous work
                             <br />
                             • Relevant Paper: Uniform Dense Blocking for Efficient Sparse LU Factorization in
-                            First-principles Materials
-                            Simulation.(Euro-Par 25)
+                            First-Principles Materials Simulation.
+                            In: Euro-Par 2025: Parallel Processing. Lecture Notes in Computer Science, vol. 15902, pp.
+                            341–354. Springer, Cham
+                            (2026). DOI: 10.1007/978-3-031-99872-0_24
                         </p>
                         <!-- 换行 -->
                         <br />
@@ -164,17 +214,26 @@
                     <div class="flex-grow-1">
                         <h4 class="mb-0">Deepseek deployment on Kunpeng Processor</h4>
                         <div class="subheading mb-5">Prof. Jidong Zhai, Jingze Xing (PACMAN Group)</div>
-                        <p>• Project Introduction: Most existing large models are deployed on GPUs. We hope to deploy
-                            the Deepseek v1 model
-                            on Kunpeng processors to achieve large-scale model deployment on CPUs, especially ARM
-                            architecture.
+                        <p>• Project Introduction: Most existing large models are deployed on GPUs. We aim to deploy the
+                            Deepseek V1 model on
+                            Kunpeng processors, enabling large-scale model deployment on CPUs, particularly within the
+                            ARM architecture. This
+                            endeavor will pave the way for new explorations in the utilization of heterogeneous
+                            computing resources for future
+                            applications.
                             <br />
-                            • My Contribution: I
-                            assisted in designing the scheduling and synchronization methods of the computation graph to
-                            reduce latency, and designed the thread pool to replace omp to meet the needs of
-                            finer-grained parallel thread
-                            allocation. I also participated in the optimization of communication operators such as
-                            Alltoall and Allreduce.
+                            • Research Methods: We developed a C++ deployment implementation optimized for the Kunpeng
+                            processor based on the ARM
+                            instruction set, and integrated it with Python operators through pybind11. Finally, we
+                            applied performance analysis
+                            tools to profile and further optimize the operator.
+                            <br />
+                            • My Contribution:
+                            • Designing the scheduling and synchronization methods of the computation graph to reduce
+                            latency
+                            • Designing a thread pool to replace OpenMP for finer-grained parallel thread allocation.
+                            • Optimization of communication operators such as Alltoall and Allreduce
+                            • Optimization of calculation operators such as GEMM
                         </p>
                         <!-- 换行 -->
                         <br />
@@ -189,16 +248,24 @@
                         <h4 class="mb-0">Optimization Algorithm Design for Analog In-memory Training</h4>
                         <div class="subheading mb-5">Prof. Tianyi Chen, Zhaoxian Wu</div>
                         <p>• Project Introduction: Due to the physical properties of RRAM materials, we need to solve
-                            the lifespan issues faced
-                            by AIMC chips. The most important thing is to reduce the number of reads and writes to
-                            increase the chip lifespan. Our
-                            work is to design an algorithm to solve this problem.
+                            the lifespan issues faced by
+                            AIMC chips. The most important thing is to reduce the number of reads and writes to increase
+                            the chip lifespan. Our work
+                            is to design an algorithm to solve this problem.
                             <br />
-                            • My Main Contribution And Future
-                            Work：I designed the algorithm
-                            and performed a simple mathematical analysis
-                            of its convergence and feasibility. The next step is to rigorously prove it and implement it
-                            in code.
+                            • Research Methods: I've investigated current approaches to address the lifespan issue of
+                            analog in-memory computing
+                            chips by reducing read/write operations. Concurrently, I've examined parameter-parallel
+                            deployment strategies for
+                            contemporary GPUs and algorithms aimed at minimizing communication overhead. My goal is to
+                            design an algorithm that
+                            reduces parameter read/write operations without increasing the time complexity of training.
+                            <br />
+                            • My Contribution And Future Work：
+                            • Designing the algorithm and performed a simple mathematical analysis of its convergence
+                            and feasibility
+                            • Next step : rigorously prove convergence and time complexity and implement the algorithm
+                            in code
                         </p>
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">July 2025 - Present in Cornell </span>
@@ -206,31 +273,6 @@
                     <br />
                 </div>
 
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section" id="education">
-            <div class="resume-section-content">
-                <h3 class="mb-5">Education</h3>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">University of Science and Technology of China</h3>
-                        <div class="subheading mb-3">B.S. in Computer Science and Technology</div>
-                        <div>Hua Xia Talent Program, Minor in Finance</div>
-                        <p>GPA: 3.57/4.3, Average Score: 85.74/100 Rank: 43/172</p>
-                        <p>Core courses: Data Structures(4.3), Analog and Digital Circuits(4.0), Software Engineering
-                            Practice(4.3), Fundamentals
-                            of Scientific Programming with Python(4.0), Computer Organization and Design(Honor)(3.7),
-                            Operating
-                            System(Honor)(3.7), Algebraic Structure(4.0), Equations of Mathematical Physics B(4.0),
-                            Mathematical Analysis(3.7),
-                            Linear Algebra B1(3.7), Function of Complex Variable B(3.7),Graph Theory(3.7), Probability
-                            Theory and Mathematical
-                            Statistics(3.7), Stochastic Processes B(3.7).</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Aug. 2022 – Jun. 2026</span></div>
-                </div>
             </div>
         </section>
         <hr class="m-0" />
