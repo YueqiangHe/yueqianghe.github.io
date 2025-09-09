@@ -215,68 +215,111 @@
 
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
-                        <h4 class="mb-0">Deepseek deployment on Kunpeng Processor</h4>
-                        <div class="subheading mb-5">Prof. Jidong Zhai, Jingze Xing (PACMAN Group)</div>
-                        <p>• Project Introduction: Most existing large models are deployed on GPUs. We aim to deploy the
-                            Deepseek V1 model on
-                            Kunpeng processors, enabling large-scale model deployment on CPUs, particularly within the
-                            ARM architecture. This
-                            endeavor will pave the way for new explorations in the utilization of heterogeneous
-                            computing resources for future
-                            applications.
+                        <h4 class="mb-0">ScissorSAT - A SAT Solving Strategy Based on Cutset Parallelism</h4>
+                        <div class="subheading mb-5">Advisors: Prof Wenchao Huang</div>
+                        <p>• Project Introduction: Aiming to address high communication overhead and redundant
+                            computation in existing
+                            parallel SAT solvers, ScissorSAT proposes a CDCL parallel method based on cutset theory to
+                            improve parallel
+                            scalability, with applications in hardware verification, software testing, etc.
                             <br />
-                            • Research Methods: We developed a C++ deployment implementation optimized for the Kunpeng
-                            processor based on the ARM
-                            instruction set, and integrated it with Python operators through pybind11. Finally, we
-                            applied performance analysis
-                            tools to profile and further optimize the operator.
+                            • Research Methods: Based on Minisat, we built a variable co-occurrence graph to find
+                            minimum cutsets via a
+                            greedy algorithm, and designed a hierarchical parallel framework (outer cutset assignment
+                            enumeration +
+                            inner subproblem CDCL solving), adding <code>CutsetSplitter</code> and <code>Graph</code>
+                            modules.
                             <br />
                             • My Contribution:
-                            1. Designing the scheduling and synchronization methods of the computation graph to reduce
-                            latency
-                            2. Designing a thread pool to replace OpenMP for finer-grained parallel thread allocation.
-                            3. Optimization of communication operators such as Alltoall and Allreduce
-                            4. Optimization of calculation operators such as GEMM
+                            1. Proposed the hierarchical parallel strategy to reduce inter-thread communication.
+                            2. Modified Minisat code (added parallel support, designed interfaces, optimized
+                            compilation).
+                            3. Implemented core modules for cutset search, CNF decomposition, and graph management.
+                            4. Conducted experiments verifying faster UNSAT solving and analyzed cutset size impact.
                         </p>
-                        <!-- 换行 -->
+                        <p><a href="https://github.com/YueqiangHe/ScissorSAT" target="_blank">Project Link</a>
+                        </p>
                         <br />
 
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">July 2025 - Present in THU</span></div>
-                    <br />
-                </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <div class="flex-grow-1">
+                                <h4 class="mb-0">Deepseek deployment on Kunpeng Processor</h4>
+                                <div class="subheading mb-5">Prof. Jidong Zhai, Jingze Xing (PACMAN Group)</div>
+                                <p>• Project Introduction: Most existing large models are deployed on GPUs. We aim to
+                                    deploy the
+                                    Deepseek V1 model on
+                                    Kunpeng processors, enabling large-scale model deployment on CPUs, particularly
+                                    within the
+                                    ARM architecture. This
+                                    endeavor will pave the way for new explorations in the utilization of heterogeneous
+                                    computing resources for future
+                                    applications.
+                                    <br />
+                                    • Research Methods: We developed a C++ deployment implementation optimized for the
+                                    Kunpeng
+                                    processor based on the ARM
+                                    instruction set, and integrated it with Python operators through pybind11. Finally,
+                                    we
+                                    applied performance analysis
+                                    tools to profile and further optimize the operator.
+                                    <br />
+                                    • My Contribution:
+                                    1. Designing the scheduling and synchronization methods of the computation graph to
+                                    reduce
+                                    latency
+                                    2. Designing a thread pool to replace OpenMP for finer-grained parallel thread
+                                    allocation.
+                                    3. Optimization of communication operators such as Alltoall and Allreduce
+                                    4. Optimization of calculation operators such as GEMM
+                                </p>
+                                <!-- 换行 -->
+                                <br />
 
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h4 class="mb-0">Optimization Algorithm Design for Analog In-memory Training</h4>
-                        <div class="subheading mb-5">Prof. Tianyi Chen, Zhaoxian Wu</div>
-                        <p>• Project Introduction: Due to the physical properties of RRAM materials, we need to solve
-                            the lifespan issues faced by
-                            AIMC chips. The most important thing is to reduce the number of reads and writes to increase
-                            the chip lifespan. Our work
-                            is to design an algorithm to solve this problem.
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">July 2025 - Present in THU</span>
+                            </div>
                             <br />
-                            • Research Methods: I've investigated current approaches to address the lifespan issue of
-                            analog in-memory computing
-                            chips by reducing read/write operations. Concurrently, I've examined parameter-parallel
-                            deployment strategies for
-                            contemporary GPUs and algorithms aimed at minimizing communication overhead. My goal is to
-                            design an algorithm that
-                            reduces parameter read/write operations without increasing the time complexity of training.
-                            <br />
-                            • My Contribution And Future Work：
-                            1. Designing the algorithm and performed a simple mathematical analysis of its convergence
-                            and feasibility
-                            2. Next step : rigorously prove convergence and time complexity and implement the algorithm
-                            in code
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">July 2025 - Present in Cornell </span>
-                    </div>
-                    <br />
-                </div>
+                        </div>
 
-            </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <div class="flex-grow-1">
+                                <h4 class="mb-0">Optimization Algorithm Design for Analog In-memory Training</h4>
+                                <div class="subheading mb-5">Prof. Tianyi Chen, Zhaoxian Wu</div>
+                                <p>• Project Introduction: Due to the physical properties of RRAM materials, we need to
+                                    solve
+                                    the lifespan issues faced by
+                                    AIMC chips. The most important thing is to reduce the number of reads and writes to
+                                    increase
+                                    the chip lifespan. Our work
+                                    is to design an algorithm to solve this problem.
+                                    <br />
+                                    • Research Methods: I've investigated current approaches to address the lifespan
+                                    issue of
+                                    analog in-memory computing
+                                    chips by reducing read/write operations. Concurrently, I've examined
+                                    parameter-parallel
+                                    deployment strategies for
+                                    contemporary GPUs and algorithms aimed at minimizing communication overhead. My goal
+                                    is to
+                                    design an algorithm that
+                                    reduces parameter read/write operations without increasing the time complexity of
+                                    training.
+                                    <br />
+                                    • My Contribution And Future Work：
+                                    1. Designing the algorithm and performed a simple mathematical analysis of its
+                                    convergence
+                                    and feasibility
+                                    2. Next step : rigorously prove convergence and time complexity and implement the
+                                    algorithm
+                                    in code
+                                </p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">July 2025 - Present in Cornell </span>
+                            </div>
+                            <br />
+                        </div>
+
+                    </div>
         </section>
         <hr class="m-0" />
         <!-- Skills-->
@@ -317,7 +360,26 @@
                 <ul class="fa-ul mb-0">
                     <li>
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1st prize in 2025 ASC Student Supercomputer Challenge
+                        1st Prize, 2025 ASC Student Supercomputer Challenge (Qinghai, China) | Advisor: Prof. Junshi
+                        Chen (School of
+                        Computer Science and Technology) | Jan. 2025 - May. 2025
+                        <p class="mt-2 mb-1"><strong>Competition Tasks</strong>: Preliminaries: Linpack benchmark
+                            (HPL/HPCG), RNA m5c site
+                            detection optimization, AlphaFold3 CPU deployment; Finals: Added Geant4 code optimization &
+                            DeepSeek CPU
+                            deployment (under strict power constraints).</p>
+                        <p class="mb-1"><strong>Optimization Methods</strong>: Used Intel® VTune™ Profiler for hotspot
+                            analysis; optimized
+                            parallelization/scheduling, rewrote high-level code to low-level languages, and adjusted
+                            compilation
+                            flags/linked libraries/hardware settings.</p>
+                        <p class="mb-0"><strong>My Contributions</strong>: 1. Proposed chromosome-parallel strategy for
+                            RNA m5c detection
+                            (utilizing task independence); 2. Rewrote Java code to C++ (reduced GC-related memory/time
+                            overhead); 3.
+                            Optimized thread pool (replaced high-competition locks with lock-free queues) and adjusted
+                            compilation/link
+                            options.</p>
                     </li>
                     <li>
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
