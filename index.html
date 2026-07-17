@@ -65,7 +65,7 @@
                     their convergence and feasibility, as well as deploying and applying them in real-world scenarios.
                 </p>
                 <p class="lead mb-5">
-                    My research lies in HPC(High performance computing), system, Analog In-Memory Computing(AIMC),
+                    My research lies in HPC(High performance computing), system,
                     Optimization
                 </p>
                 <p class="lead mb-5 text-red">
@@ -87,7 +87,7 @@
                         <div class="subheading mb-3">B.S. in Computer Science and Technology</div>
                         <div>Hua Xia Talent Program, Minor in Finance</div>
                         <p>GPA: 3.57/4.3, Average Score: 85.74/100 Rank: 43/172</p>
-                        <p>Core courses: Data Structures(4.3), Analog and Digital Circuits(4.0), Software Engineering
+                        <!-- <p>Core courses: Data Structures(4.3), Analog and Digital Circuits(4.0), Software Engineering
                             Practice(4.3), Fundamentals
                             of Scientific Programming with Python(4.0), Computer Network(4.0),Computer Organization and
                             Design(Honor)(3.7),
@@ -97,7 +97,7 @@
                             Mathematical Analysis(3.7),
                             Linear Algebra B1(3.7), Function of Complex Variable B(3.7),Graph Theory(3.7), Probability
                             Theory and Mathematical
-                            Statistics(3.7), Stochastic Processes B(3.7).</p>
+                            Statistics(3.7), Stochastic Processes B(3.7).</p> -->
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">Aug. 2022 – Jun. 2026</span></div>
                 </div>
@@ -160,7 +160,7 @@
                     <br />
                 </div>
 
-                <div class="d-flex flex-column flex-md-row justify-content-between">
+                <!-- <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
                         <h4 class="mb-0">Optimization Algorithm Design for Analog In-memory Training</h4>
                         <div class="subheading mb-5">Prof. Tianyi Chen, Zhaoxian Wu</div>
@@ -197,9 +197,9 @@
                     <div class="flex-shrink-0"><span class="text-primary">July 2025 - Present in Cornell </span>
                     </div>
                     <br />
-                </div>
+                </div> -->
 
-                <div class="d-flex flex-column flex-md-row justify-content-between">
+                <!-- <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
                         <h4 class="mb-0">Deepseek deployment on Kunpeng Processor</h4>
                         <div class="subheading mb-5">Prof. Jidong Zhai, Jingze Xing (PACMAN Group)</div>
@@ -227,20 +227,19 @@
                             latency
                             2. Designing a thread pool to replace OpenMP for finer-grained parallel thread
                             allocation.
+                           4. Optimization of calculation operators such as GEMM
                             3. Optimization of communication operators such as Alltoall and Allreduce
-                            4. Optimization of calculation operators such as GEMM
-                        </p>
-                        <!-- 换行 -->
+                         </p>
                         <br />
 
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">July 2025 - Oct 2025 in THU</span>
                     </div>
                     <br />
-                </div>
+                </div> -->
 
 
-                <div class="d-flex flex-column flex-md-row justify-content-between">
+                <!-- <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
                         <h4 class="mb-0">ScissorSAT - A SAT Solving Strategy Based on Cutset Parallelism (Course Design)
                         </h4>
@@ -267,143 +266,143 @@
                         </p>
                         <p><a href="https://github.com/YueqiangHe/ScissorSAT" target="_blank">Project Link</a>
                         </p>
-                        <br />
+                        <br /> -->
 
-                        <div class="d-flex flex-column flex-md-row justify-content-between">
-                            <div class="flex-grow-1">
-                                <h4 class="mb-0">Dense kernel-based LU solver for Kunpeng Processor</h4>
-                                <div class="subheading mb-5">Advisors: Prof. Hong An & Prof. Junshi Chen</div>
-                                <p>• Project Introduction: We are committed to researching LU solvers. Traditional
-                                    solvers
-                                    struggle with memory limits and
-                                    inefficient handling of locally dense regions. We propose BTLU, a new LU
-                                    factorization
-                                    method that directly splits
-                                    matrices into uniform dense blocks, turning memory-bound tasks into
-                                    compute-intensive ones.
-                                    This approach better matches
-                                    modern CPU architectures and achieves significant speedups on Intel, AMD, and ARM
-                                    platforms.
-                                    <br />
-                                    • Research Methods: Our method combines RCM reordering to cluster nonzeros near the
-                                    diagonal
-                                    with a block-tile structure
-                                    that organizes data into cache-friendly dense tiles and parallelizable blocks.
-                                    Factorization
-                                    is performed using
-                                    efficient level-3 BLAS kernels, while OpenMP ensures balanced multithreading. Unlike
-                                    traditional approaches requiring
-                                    symbolic analysis, BTLU dynamically allocates tiles, reducing memory use and
-                                    improving NUMA
-                                    locality. This design
-                                    maximizes cache efficiency and scalability.
-                                    <br />
-                                    • My Contribution:
-                                    1. Optimization tests on various platforms
-                                    2. Try to solve the NUMA effect of existing parallel algorithms
-                                    3. Comparison and reflection of the existing work with previous work
-                                    <br />
-                                    • Relevant Paper: Uniform Dense Blocking for Efficient Sparse LU Factorization in
-                                    First-Principles Materials Simulation.
-                                    In: Euro-Par 2025: Parallel Processing. Lecture Notes in Computer Science, vol.
-                                    15902, pp.
-                                    341–354. Springer, Cham
-                                    (2026). DOI: 10.1007/978-3-031-99872-0_24
-                                </p>
-                                <!-- 换行 -->
-                                <br />
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">Dec. 2024 - Present in USTC</span>
-                            </div>
-                            <!-- 添加换行符 -->
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-0">Dense kernel-based LU solver</h4>
+                        <div class="subheading mb-5">Advisors: Prof. Hong An & Prof. Junshi Chen</div>
+                        <p>• Project Introduction: We are committed to researching LU solvers. Traditional
+                            solvers
+                            struggle with memory limits and
+                            inefficient handling of locally dense regions. We propose BTLU, a new LU
+                            factorization
+                            method that directly splits
+                            matrices into uniform dense blocks, turning memory-bound tasks into
+                            compute-intensive ones.
+                            This approach better matches
+                            modern CPU architectures and achieves significant speedups on Intel, AMD, and ARM
+                            platforms.
                             <br />
-                        </div>
-
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <h4 class="mb-0">Extending Basilisk to C++ Using Clang Frontend</h4>
-                                <div class="subheading mb-5">Advisors: Prof. Hong An & Prof. Junshi Chen</div>
-                                <p>• Project Introduction: We are focused on researching language extension and
-                                    migration, with
-                                    the goal of extending
-                                    the Basilisk language to support C++ syntax through modifications to the Clang
-                                    frontend.(Basilisk is an open source
-                                    software for solving partial differential equations on adaptive rectangular grids.)
-                                    <br />
-                                    • My
-                                    Main Contribution: Investigate the compilation process of basilisk and C++ and
-                                    assess the
-                                    feasibility of
-                                    migration
-                                </p>
-                                <p><a href="https://github.com/YueqiangHe/basilisk_and_clang" target="_blank">Project
-                                        Link</a>
-                                </p>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">Sept. 2024 - Nov. 2024 in USTC</span>
-                            </div>
-                        </div>
-
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <h4 class="mb-0">Automated Reasoning Engine System</h4>
-                                <div class="subheading mb-5">Advisor: Prof. Yi Zhou</div>
-                                <p>• Project Introduction: Lean plays a crucial role in automated theorem proving as a
-                                    language
-                                    for mathematical
-                                    formalization. Yet, its foundation in first-order logic imposes limitations on its
-                                    expressiveness. To overcome this, we
-                                    introduce a language built upon assertive logic, extending the Lean framework, to
-                                    tackle the
-                                    formal verification of
-                                    modern algebra problems relevant to the IMO.
-                                    <br />
-                                    • Research Methods: First, we designed a programming language similar to Lean, along
-                                    with a
-                                    system for
-                                    understanding problem statements. Next, we established a theorem library. Finally,
-                                    we
-                                    utilized current models for
-                                    training, aiming to build a system for automated theorem proving and proof
-                                    correctness
-                                    verification.
-                                    <br />
-                                    • My Main Contribution: Data Annotation for IMO Questions, Operator Modeling in
-                                    Modern
-                                    Algebra, Designing a
-                                    Mathematics Problem Understanding System
-                                </p>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">Sept. 2023 - July. 2024 in USTC</span>
-                            </div>
-                        </div>
-
-
-
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <h4 class="mb-0">Distributed Deployment of Foundation Model using Ray (Course Design)
-                                </h4>
-                                <div class="subheading mb-5">Advisor: Prof. Kai Xing</div>
-                                <p>
-                                    • Project Introduction: Our goal is to achieve parallel training and inference of
-                                    large
-                                    models through Ray and tools
-                                    such as DeepSpeed ZeRO, automatic dataset partitioning, and vLLM.
-                                    <br />
-                                    • My Main Contribution: By leveraging Ray's API and
-                                    automatic dataset distribution, we have achieved nearly linear
-                                    acceleration in large model training.
-                                </p>
-                                <p><a href="https://github.com/OSH-2024/Team_SwanGeese" target="_blank">Project Link</a>
-                                </p>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">Mar. 2024 - June. 2024 in USTC</span>
-                            </div>
-                        </div>
-
-
+                            • Research Methods: Our method combines RCM reordering to cluster nonzeros near the
+                            diagonal
+                            with a block-tile structure
+                            that organizes data into cache-friendly dense tiles and parallelizable blocks.
+                            Factorization
+                            is performed using
+                            efficient level-3 BLAS kernels, while OpenMP ensures balanced multithreading. Unlike
+                            traditional approaches requiring
+                            symbolic analysis, BTLU dynamically allocates tiles, reducing memory use and
+                            improving NUMA
+                            locality. This design
+                            maximizes cache efficiency and scalability.
+                            <br />
+                            • My Contribution:
+                            1. Optimization tests on various platforms
+                            2. Try to solve the NUMA effect of existing parallel algorithms
+                            3. Comparison and reflection of the existing work with previous work
+                            <br />
+                            • Relevant Paper: Uniform Dense Blocking for Efficient Sparse LU Factorization in
+                            First-Principles Materials Simulation.
+                            In: Euro-Par 2025: Parallel Processing. Lecture Notes in Computer Science, vol.
+                            15902, pp.
+                            341–354. Springer, Cham
+                            (2026). DOI: 10.1007/978-3-031-99872-0_24
+                        </p>
+                        <!-- 换行 -->
+                        <br />
                     </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Dec. 2024 - Present in USTC</span>
+                    </div>
+                    <!-- 添加换行符 -->
+                    <br />
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-0">Extending Basilisk to C++ Using Clang Frontend</h4>
+                        <div class="subheading mb-5">Advisors: Prof. Hong An & Prof. Junshi Chen</div>
+                        <p>• Project Introduction: We are focused on researching language extension and
+                            migration, with
+                            the goal of extending
+                            the Basilisk language to support C++ syntax through modifications to the Clang
+                            frontend.(Basilisk is an open source
+                            software for solving partial differential equations on adaptive rectangular grids.)
+                            <br />
+                            • My
+                            Main Contribution: Investigate the compilation process of basilisk and C++ and
+                            assess the
+                            feasibility of
+                            migration
+                        </p>
+                        <p><a href="https://github.com/YueqiangHe/basilisk_and_clang" target="_blank">Project
+                                Link</a>
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Sept. 2024 - Nov. 2024 in USTC</span>
+                    </div>
+                </div>
+
+                <!-- <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-0">Automated Reasoning Engine System</h4>
+                        <div class="subheading mb-5">Advisor: Prof. Yi Zhou</div>
+                        <p>• Project Introduction: Lean plays a crucial role in automated theorem proving as a
+                            language
+                            for mathematical
+                            formalization. Yet, its foundation in first-order logic imposes limitations on its
+                            expressiveness. To overcome this, we
+                            introduce a language built upon assertive logic, extending the Lean framework, to
+                            tackle the
+                            formal verification of
+                            modern algebra problems relevant to the IMO.
+                            <br />
+                            • Research Methods: First, we designed a programming language similar to Lean, along
+                            with a
+                            system for
+                            understanding problem statements. Next, we established a theorem library. Finally,
+                            we
+                            utilized current models for
+                            training, aiming to build a system for automated theorem proving and proof
+                            correctness
+                            verification.
+                            <br />
+                            • My Main Contribution: Data Annotation for IMO Questions, Operator Modeling in
+                            Modern
+                            Algebra, Designing a
+                            Mathematics Problem Understanding System
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Sept. 2023 - July. 2024 in USTC</span>
+                    </div>
+                </div> -->
+
+
+
+                <!-- <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-0">Distributed Deployment of Foundation Model using Ray (Course Design)
+                        </h4>
+                        <div class="subheading mb-5">Advisor: Prof. Kai Xing</div>
+                        <p>
+                            • Project Introduction: Our goal is to achieve parallel training and inference of
+                            large
+                            models through Ray and tools
+                            such as DeepSpeed ZeRO, automatic dataset partitioning, and vLLM.
+                            <br />
+                            • My Main Contribution: By leveraging Ray's API and
+                            automatic dataset distribution, we have achieved nearly linear
+                            acceleration in large model training.
+                        </p>
+                        <p><a href="https://github.com/OSH-2024/Team_SwanGeese" target="_blank">Project Link</a>
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Mar. 2024 - June. 2024 in USTC</span>
+                    </div>
+                </div> -->
+
+
+            </div>
         </section>
         <hr class="m-0" />
         <!-- Skills-->
